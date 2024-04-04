@@ -14,8 +14,13 @@ services:
       - ./stirling/latest/config:/configs:rw
       - ./stirling/latest/logs:/logs:rw
     environment:
-      DOCKER_ENABLE_SECURITY: "false"
-      SECURITY_ENABLELOGIN: "false"
+      DOCKER_ENABLE_SECURITY: "true"
+      SECURITY_ENABLELOGIN: "true"
+      SECURITY_INITIALLOGIN_USERNAME: admin
+      SECURITY_INITIALLOGIN_PASSWORD: ${ADMIN_PASSWORD}
+      PUID: 1002
+      PGID: 1002
+      UMASK: "022"
       SYSTEM_DEFAULTLOCALE: en-US
       UI_APPNAME: Stirling-PDF
       UI_HOMEDESCRIPTION: Stirling-PDF
