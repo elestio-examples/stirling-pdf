@@ -4,7 +4,7 @@
 
 Deploy Stirling-PDF server with CI/CD on Elestio
 
-<img src="stirling-pdf.jpg" style='width: 100%;'/>
+<img src="stirling-pdf.png" style='width: 100%;'/>
 <br/>
 <br/>
 
